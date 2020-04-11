@@ -1,3 +1,5 @@
+package zorkyy.demo.main;
+
 import java.util.Random;
 
 public class AI extends AGamer {

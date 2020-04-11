@@ -1,3 +1,5 @@
+package zorkyy.demo.main;
+
 public abstract class AGamer {
     protected String sign;
 

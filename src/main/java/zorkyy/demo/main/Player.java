@@ -1,3 +1,5 @@
+package zorkyy.demo.main;
+
 public class Player extends AGamer{
     MainGameField gameField;
     int isShotReady = 1;

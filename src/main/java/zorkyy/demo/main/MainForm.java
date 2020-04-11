@@ -1,3 +1,5 @@
+package zorkyy.demo.main;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -14,7 +16,7 @@ public class MainForm extends JFrame {
         JPanel buttonPanel = new JPanel(new GridLayout());
         add(gameField, BorderLayout.CENTER);
         add(buttonPanel, BorderLayout.SOUTH);
-        JButton btnStart = new JButton("Начать новую игру");
+        final JButton btnStart = new JButton("Начать новую игру");
         JButton btnEnd = new JButton("Закончить игру");
         buttonPanel.add(btnStart);
         buttonPanel.add(btnEnd);

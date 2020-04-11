@@ -1,3 +1,5 @@
+package zorkyy.demo.main;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -13,14 +15,14 @@ public class GameSettingsForm extends JFrame {
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         JLabel jLabelMode = new JLabel("Выберете режим игры:");
         add(jLabelMode);
-        JRadioButton radioButtonModeTwoPlayers = new JRadioButton("Игрок против игрока");
+        final JRadioButton radioButtonModeTwoPlayers = new JRadioButton("Игрок против игрока");
         add(radioButtonModeTwoPlayers);
         radioButtonModeTwoPlayers.setSelected(true);
-        JRadioButton radioButtonModeAgainstAI = new JRadioButton("Игрок против компьютера");
+        final JRadioButton radioButtonModeAgainstAI = new JRadioButton("Игрок против компьютера");
         add(radioButtonModeAgainstAI);
         JLabel jLabelAILevel = new JLabel("Выберете уровень AI:");
         add(jLabelAILevel);
-        JSlider jSlider = new JSlider(0,2,0);
+        final JSlider jSlider = new JSlider(0,2,0);
         add(jSlider);
         jSlider.setAlignmentX(LEFT_ALIGNMENT);
         jSlider.setVisible(false);
@@ -29,7 +31,7 @@ public class GameSettingsForm extends JFrame {
         buttonGroup.add(radioButtonModeAgainstAI);
         JLabel jLabelLinesCount = new JLabel("Размер поля (по умолчанию 3 на 3): ");
         add(jLabelLinesCount);
-        JTextField jTextFieldLinesCount = new JTextField();
+        final JTextField jTextFieldLinesCount = new JTextField();
         jTextFieldLinesCount.setMaximumSize(new Dimension(100, 20));
         add(jTextFieldLinesCount);
         JButton jButtonSetSettings = new JButton("Начать игру!");
